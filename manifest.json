@@ -7,9 +7,16 @@
     "service_worker": "service-worker.js",
     "type": "module"
   },
+
   "action": {
-    "default_title": "Translate selected text"
+    "default_popup": "index.html"
   },
   "permissions": ["scripting", "activeTab"],
-  "host_permissions": ["http://*/*", "https://*/*"]
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "web_accessible_resources": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "resources": ["sa-flag-cursor.png", "text-hover.png"]
+    }
+  ]
 }

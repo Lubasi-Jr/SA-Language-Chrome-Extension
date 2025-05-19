@@ -1,4 +1,4 @@
-chrome.action.onClicked.addListener(async (tab) => {
+/* chrome.action.onClicked.addListener(async (tab) => {
   if (!tab.id) return;
 
   await chrome.scripting.executeScript({
@@ -15,3 +15,4 @@ chrome.action.onClicked.addListener(async (tab) => {
 
   console.log("Selection script injected into tab", tab.id);
 });
+ */
